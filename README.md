@@ -49,6 +49,11 @@ componentDidMount(){
             featured: results.data
         })
     })
+    axios.get(`/api/blogs`).then(results=>{
+        this.setState({
+            posts: results.data
+        })
+    })
 }
 ```
 
@@ -184,7 +189,7 @@ this.props.history.push('/search')
 <details>
 <summary><b>Code Solution</b></summary>
 <details>
-<summary><code>src/components/Add.js</code></summary>
+<summary><code>src/components/Edit.js</code></summary>
 
 ```javascript
 componentDidMount(){
