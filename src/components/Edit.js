@@ -23,7 +23,7 @@ class Edit extends Component {
 
 
     // Insert into the deleteBlog method an axios delete request 
-    deleteBlog(){
+    deletePost(){
         
     }
     
