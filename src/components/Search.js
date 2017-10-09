@@ -8,17 +8,18 @@ class Search extends Component{
         super();
         this.state = {
             searchTerm: '',
-            display: []
+            searchResults: []
         }
     }
 
-    //Insert a componentDidMount method
+    // Insert a componentDidMount method?
     
     // Insert a search method to make an axios request to setState -> display.
     
     
     render(){
-        const displayBlogs = this.state.display.map((c,i)=><BlogTile key={i} blog={this.state.testBlog}/>)
+        // map over the searchResults here
+
         return(
             <div className='content' >
                 <form className='search-group' >
@@ -27,7 +28,7 @@ class Search extends Component{
                     <button type="submit">Search</button>
                 </form>
                 <div className="blog-list">
-                    {displayBlogs}
+                    {/* insert your mapped data from searchResults here */}
                 </div>
                 
             </div>
