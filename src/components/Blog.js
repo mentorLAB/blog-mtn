@@ -30,6 +30,13 @@ class Blog extends Component{
                     </div>
                 <div className="blog-container">
                     <h2>{blog.subTitle}</h2>
+                    {
+                        blog.name
+                        ?
+                        <h3>{blog.name}</h3>
+                        :
+                        null
+                    }
                     <hr/><br/>
                     <Formated text={blog.text}/>
                 </div>
