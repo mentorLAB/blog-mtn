@@ -5,8 +5,8 @@ class Home extends Component{
     constructor(){
         super();
         this.state = {
-            featured: {id: 113, title:'Creative Coding!', subTitle: 'To boldly code where no coder has coded before.', imgUrl: 'https://unsplash.it/900/400/?random'},
-            posts: [1,2,3,4,5,6,7,8]
+            featured: {},
+            posts: []
         }
     }
     render(){

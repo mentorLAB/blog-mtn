@@ -84,7 +84,6 @@ a{
   grid-template-rows: 1fr 80px 50px;
   justify-items: center;
   align-items: center;
-  background-image: url('https://unsplash.it/700/400/?random');
   background-size: cover;
   padding: 15px;
 }

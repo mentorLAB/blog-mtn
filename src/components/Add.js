@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import ConfirmModal from './subcomponents/ConfirmModal';
-//remove:
-import axios from 'axios';
 
 class Add extends Component {
     constructor(){
@@ -20,16 +18,6 @@ class Add extends Component {
 
     // Insert Submit function here that will use an Axios request:
 
-    //remove:
-    submit(){
-        let {title, subTitle, imgUrl, text} = this.state;        
-        if (title && subTitle && imgUrl && text){
-            axios.post('/api/blog/', this.state).then(response=>{
-                alert('Blog post added');
-                this.props.history.push('/search')
-            })
-        }
-    }
     
     render() {
         let {title, subTitle, imgUrl, text} = this.state;

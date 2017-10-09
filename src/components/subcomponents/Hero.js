@@ -7,9 +7,9 @@ class Hero extends Component{
         const blog = this.props.blog;
         return(
             <Link to={`/blog/${blog.id}`}>
-                <div className='hero-container' >
+                <div className='hero-container' style={{backgroundImage: 'url('+blog.imgUrl+')'}}>
                     <h1 className="hero-title">{blog.title}</h1>
-                    <h3 className="hero-subtitle">To boldly code where no coder has coded before.</h3>
+                    <h3 className="hero-subtitle">{blog.subTitle}</h3>
                 </div>
             </Link>
         )
