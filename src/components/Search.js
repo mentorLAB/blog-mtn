@@ -23,7 +23,7 @@ class Search extends Component{
             <div className='content' >
                 <form className='search-group' >
                     <label htmlFor="">Search Blog Posts </label>
-                    <input onChange={e=>this.changeSearch(e.target.value)} value={this.state.searchTerm} type="text"/>
+                    <input autoFocus onChange={e=>this.changeSearch(e.target.value)} value={this.state.searchTerm} type="text"/>
                     <button type="submit">Search</button>
                 </form>
                 <div className="blog-list">

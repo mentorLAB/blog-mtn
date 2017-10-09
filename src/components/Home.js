@@ -9,14 +9,19 @@ class Home extends Component{
             posts: []
         }
     }
+
+    // Make a componentDidMount method here:
+
+
     render(){
-        const blogs = this.state.posts.map((c,i)=><BlogThumb key={i} blog={this.state.featured}/>)
+        // map over your recommended blogs here
+
         return(
             <div className="content" >
                 <Hero blog={this.state.featured} />
                 <hr/>
                 <div className="blog-grid">
-                    {blogs}
+                    {/* put your mapped blogs here */}
                 </div>
             </div>
         )
