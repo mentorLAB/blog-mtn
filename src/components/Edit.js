@@ -17,14 +17,28 @@ class Edit extends Component {
         this.no = this.no.bind(this);
     }
     // Insert a componentDidMount method that does an axios request for the blog indicated by the param in the url
-    
+    componentDidMount(){
+        axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            this.setState({
+                blog: results.data
+            })
+        })
+    }
 
     // Insert Submit function here that will use an Axios request:
-
+    updatePost(){
+        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
+            this.props.history.push(`/blog/${this.props.match.params.id}`)
+        })
+    }
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
-        
+        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            this.props.history.push('/search')
+        })
     }
     
     render() {

@@ -11,7 +11,18 @@ class Home extends Component{
     }
 
     // Make a componentDidMount method here:
-
+    componentDidMount(){
+        axios.get('/api/featured').then(results=>{
+            this.setState({
+                featured: results.data
+            })
+        })
+        axios.get(`/api/blogs`).then(results=>{
+            this.setState({
+                posts: results.data
+            })
+        })
+    }
 
     render(){
         // map over your recommended blogs here

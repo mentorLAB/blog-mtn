@@ -15,6 +15,13 @@ class Search extends Component{
     // Insert a componentDidMount method?
     
     // Insert a search method to make an axios request to setState -> display.
+    search(){
+        axios.get(`/api/blogs/?q=${this.state.searchTerm}`).then(results=>{
+            this.setState({
+                searchResults: results.data
+            })
+        })
+    }
     
     
     render(){

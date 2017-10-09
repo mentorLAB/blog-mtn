@@ -16,7 +16,15 @@ class Add extends Component {
 
     }
 
-    // Insert Submit function here that will use an Axios request:
+    // Insert post function here that will use an Axios request:
+    post(){
+        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        axios.post('/api/blog', body).then(results=>{
+            this.setState({
+                searchResults: results.data
+            })
+        })
+    }
 
     
     render() {
