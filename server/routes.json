@@ -1,0 +1,8 @@
+{
+    "/api/*": "/$1",
+    "/blogs": "/blogs?_limit=10",
+    "/blogs/:query": "/blogs?q=:query&_limit=10",
+    "/featured": "/blogs?featured=true&_limit=10",
+    "/blog/:id": "/blogs?id=:id",
+    "/users": "/users"
+}
