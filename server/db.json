@@ -222,15 +222,21 @@
     "users": [
         {
             "id": 0,
-            "name": "Andrew Garvin"
+            "name": "Andrew Garvin",
+            "img": "",
+            "desc": "I’m all about that bass… And by bass I mean I’m just super cool, ya know? Specialities include Dad Jokes, Programming, Wakeboarding, and other st00f"
         },
         {
             "id": 1,
-            "name": "Emily Keator"
+            "name": "Emily Keator",
+            "img": "",
+            "desc": "Emily Keator grew up in Florida but likes to deny it, and graduated from Davidson College with a degree in biology. If you interrupt her reading, she will bite you."
         },
         {
             "id": 2,
-            "name": "Brennon Schow"
+            "name": "Brennon Schow",
+            "img": "",
+            "desc": "I've found that I'm constantly breathing oxygen whether I mean to or not, and I've contributed to the gene pools of two small humans."
         },
         {
             "id": 3,
@@ -262,7 +268,9 @@
         },
         {
             "id": 10,
-            "name": "Bryan Smith"
+            "name": "Bryan Smith",
+            "img": "https://static1.squarespace.com/static/58680ce2d1758e371522bf7f/5868b4695016e16d593b7a3d/58db1d895016e15e289c9b3d/1490759681172/Opa.JPG?format=2500w",
+            "desc": "I'm in there somewhere"
         },
         {
             "id": 11,
