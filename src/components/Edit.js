@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ConfirmModal from './subcomponents/ConfirmModal';
 
-
+import axios from 'axios';
 
 class Edit extends Component {
     constructor(){
@@ -9,7 +9,7 @@ class Edit extends Component {
         this.state = {
             title: '',
             subTitle:'',
-            imgUrl:'',
+            image:'',
             text:'',
             confirm: ''
         }
@@ -19,15 +19,19 @@ class Edit extends Component {
     // Insert a componentDidMount method that does an axios request for the blog indicated by the param in the url
     componentDidMount(){
         axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            let blog = results.data[0]
             this.setState({
-                blog: results.data
+                title: blog.title,
+                subTitle: blog.subTitle,
+                image: blog.image,
+                text: blog.text
             })
         })
     }
 
     // Insert Submit function here that will use an Axios request:
     updatePost(){
-        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
         axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
             this.props.history.push(`/blog/${this.props.match.params.id}`)
         })
@@ -35,14 +39,13 @@ class Edit extends Component {
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
-        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
         axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
             this.props.history.push('/search')
         })
     }
     
     render() {
-        let {title, subTitle, imgUrl, text} = this.state;
+        let {title, subTitle, image, text} = this.state;
         return (
             <div className='content'>
                 <div className="add-blog">
@@ -56,7 +59,7 @@ class Edit extends Component {
                     </div>
                     <div className="input-group">
                         <label htmlFor="">Photo Url</label>
-                        <input value={imgUrl} onChange={e=>this.imgUrlChange(e.target.value)} type="text"/>
+                        <input value={image} onChange={e=>this.imageChange(e.target.value)} type="text"/>
                     </div>
                     <div className="input-group text-input">
                         <label htmlFor="">Content</label>
@@ -84,13 +87,13 @@ class Edit extends Component {
             this.setState({
                 title: '',
                 subTitle: '',
-                imgUrl: '',
+                image: '',
                 text: '',
                 confirm: ''
             })
         }
         else{
-            this.deleteBlog()
+            this.deletePost()
         }
     }
     no(){
@@ -119,9 +122,9 @@ class Edit extends Component {
             subTitle: val
         })
     }
-    imgUrlChange(val){
+    imageChange(val){
         this.setState({
-            imgUrl: val
+            image: val
         })
     }
     textChange(val){

@@ -12,7 +12,7 @@
         {
             "id": 1,
             "name": "Brennon Schow",
-            "image": "https://en.wikipedia.org/wiki/Llama#/media/File:Domestic_llama_(2009-05-19).jpg",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Domestic_llama_%282009-05-19%29.jpg/800px-Domestic_llama_%282009-05-19%29.jpg",
             "title": "Se llama llama",
             "subTitle": "I'm too confused",
             "text": "Happy llama, sad llama, mentally deranged llama, super llama, drama llama, big, fat, mama llama, duck.",
@@ -51,7 +51,7 @@
             "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
             "title": "A Bluegrass Dream",
             "subTitle": "A Kentucky Boy Stuck in Utah",
-            "text": "Hello, /n If you are reading this I survived the mountain./n As a Kentuckian i fit right in round these parts, minus the BurkenStocks that everyone seems to wear. I spent many nights wishing on the stars about being home around the Bluegrass, and Kentucky Basketball. It has been a long time since i smelled the sweet scent of HoneySuckle or the sound of horses thundering around the track at Churchill Downs. It has been quite the journey from KY to UT, but one that will not be forgotten. The knowledge bestowed upon me by Brennon, Lloyd, and the long lost Alan will stay with me till the end of time, and for that i am forever grateful. Their guiding spirit has brought me from the dpeths of unknown coding, and stupid questions, to a somewhat knowledgeable coder. For that i am ever thankful. ",
+            "text": "Hello, \n If you are reading this I survived the mountain.\n As a Kentuckian i fit right in round these parts, minus the BurkenStocks that everyone seems to wear. I spent many nights wishing on the stars about being home around the Bluegrass, and Kentucky Basketball. It has been a long time since i smelled the sweet scent of HoneySuckle or the sound of horses thundering around the track at Churchill Downs. It has been quite the journey from KY to UT, but one that will not be forgotten. The knowledge bestowed upon me by Brennon, Lloyd, and the long lost Alan will stay with me till the end of time, and for that i am forever grateful. Their guiding spirit has brought me from the dpeths of unknown coding, and stupid questions, to a somewhat knowledgeable coder. For that i am ever thankful. ",
             "featured": false
         },
         {
@@ -75,8 +75,8 @@
         {
             "id": 8,
             "name": "Thus Saith the Lloyd",
-            "image": "https://i.pinimg.com/originals/dc/f9/84/dcf984f5698b5143696be337f3bf9e28.jpg (52kB) ",
-            "title": "The Importance of Seperating Work and Home Life",
+            "image": "https://i.pinimg.com/originals/dc/f9/84/dcf984f5698b5143696be337f3bf9e28.jpg",
+            "title": "The Importance of Separating Work and Home Life",
             "subTitle": "The consequences of using your precise logic skills and habits can cause stress in your home life.",
             "text": "Your skills in logic and precision are highly sought after.\nYou are paid well for those skills, but they have their time and place. That place is not at home.\n\nNow, I'm not saying that you should be illogical or imprecise at home. I am only suggesting that for your own happiness and the happiness of your home you need to allow for more ambiguity and assumptions in your conversations with your significant other, roommates, and children.\n\nWhen someone asks you a question using AND or OR, you may need to format your answer in a way that they can parse.\n\"Would you like to go to Wendy's or Taco Bell for lunch?\" Now, we both know that the answer of \"yes\" means that one of those options is acceptable, but they may not know what you mean. I recommend you say \"either\" before the choices, or the one you prefer.\n\nWhen someone asks you to do several things don't assume that the conditionals are always linked to the entire list.\n\nThe term \"while\" is very similar to what you are familiar with in your programming background, however, you never assume that the condition given with the while is permanent.\n\"While you are out ...\" !== while(youAreOut = true) {//actions here}\n\n\"While you are out ...\" === while(youAreOut === true) {//actions here}\n\nRemember, you are multilingual now and you are going to have a \"fun\" time learning the quirks and syntax of this language and the accompaning APIs (Another-Person Interface).\n\nP.S. Bonus suggestion: take up a hobby not related to programming. It will help you interface with others!",
             "featured": true

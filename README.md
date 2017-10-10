@@ -143,7 +143,7 @@ The enpoint will be at `/api/blog`.
 
 ```javascript
 post(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.post('/api/blog', body).then(results=>{
         this.setState({
             searchResults: results.data
@@ -201,14 +201,14 @@ componentDidMount(){
 }
 
 updatePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
         this.props.history.push(`/blog/${this.props.match.params.id}`)
     })
 }
 
 deletePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
         this.props.history.push('/search')
     })
