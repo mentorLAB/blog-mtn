@@ -22,7 +22,7 @@ class Search extends Component{
             this.setState({
                 searchResults: results.data
             })
-        })
+        }).catch(console.log)
     }
     
     
