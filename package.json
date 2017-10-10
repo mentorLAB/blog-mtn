@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "db": "json-server -w server/db.json -p 3001 -m server/newBlog.js"
+    "db": "json-server -w server/db.json -p 3001"
   },
   "proxy": "http://localhost:3001",
   "main": "server/server.js"
