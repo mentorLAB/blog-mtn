@@ -26,12 +26,110 @@ You can make sure the project is ready to work on by running:
 Install axios into the project:
 `npm install axios --save`
 
+## Axios
+
+To use axios you will import it into any component or Javascript file in which you will be using it.
+
+`import axios from 'axios';`
+
+#### Methods
+For eact type of HTTP request you will use the appropriate axios method:
+
+`axios.get()`
+`axios.post()`
+`axios.put()`
+`axios.delete()`
+
+The methods `get` and `delete` will take a string indicating the API endpoint route or URL.
+
+`axios.get('/api/blogs')` or `axios.get('https://swapi.co/api/people/1/')`
+
+The methods `post` and `put` will take a string and an optional object.
+This object will usually contain the information that you are putting on the database. It will need to be structured according the the API's documentation.
+
+For example:
+
+```javascript
+let user = {name: "Lloyd", height: `5'11"`, programmingLanguages: ['javascript', 'python', 'c++']}
+axios.post('/api/users', user)
+```
+
+#### Promises
+
+Axios methods return promise objects. This allows for other code to run until your request recieves a response
+
+To handle the response you will use the `.then` method for fulfilled requests and the `.catch` method for rejected requests;
+Each of these methods take a callback function. `.then` will give you the response object and `.catch` will give you the error (usually the reason for rejection.)
+
+For example:
+
+```javascript
+axios.get('/api/user/56812').then(response=>{
+    //Do something with response
+    console.log(response.data);
+    this.setState({
+        user: response.data
+    });
+}).catch(err=>{
+    console.log(err);
+})
+```
+
+## Api Documentation
+
+#### Endpoints
+
+Method: GET<br>
+`/api/user/:id` - Returns one user object if the id matches a user in the database.<br>
+`/api/users` - Returns an array with 10 users paginated. Also accepts a query for searching users.<br>
+`/api/blog/:id` - Returns one blog object if the id matcher a blog in the database.<br>
+`/api/blogs` - Returns an array with 10 blogs paginated. Also accepts a query for searching blogs.<br>
+`/api/featured` - Returns an array with the blogs marked as featured.<br>
+`/api/blogs/user/:id` - Returns an array with all the blogs authored by the user indicated by the id param.<br>
+
+Method: POST<br>
+`/api/users/` - Returns an object with the new user information including the id.<br>
+`/api/blogs/` - Returns an object with the new blog post information including the id.<br>
+
+Method: PUT<br>
+`/api/user/:id` - Returns an object with the updated user.<br>
+`/api/blog/:id` - Returns an object with the updated blog post.<br>
+
+Method: DELETE<br>
+`/api/user/:id` - Returns an empty object after deleting the indicated user.<br>
+`/api/blog/:id` - Returns an empty object after deleting the indicated blog post. <br>
+
+#### Data Models
+
+The following data templates (sometimes called schemas) are what the POST and PUT endpoint expect. 
+
+Blog Post: 
+
+```javascript
+{
+    name: "John Doe",
+    image: "https://usplash.it/600/300/?random",
+    title: "Blogs Need Titles",
+    subTitle: "They don't neccessarily have to have subtitles.",
+    text: "Content would go here.",
+    featured: true
+}
+```
+
+User: 
+
+```javascript
+{
+    name: "Andrew Garvin"
+}
+```
 
 ## Home view
 
 Open the Home.js file in the components folder.
 Import axios near the top of the file:
 `import axios from 'axios';`
+
 Now, you will make a `componentDidMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
 
 Using the `.then` function on the axios call, set the `featured` property in state to the appropriate data in the results.
@@ -64,6 +162,8 @@ componentDidMount(){
 
 ## Blog
 Next we are going to add axios to the Blog.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will also be in the `componentDidMount` method.
 
@@ -97,6 +197,8 @@ componentDidMount(){
 ## Search
 
 Next we are going to add axios to the Search.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will be in a method you will make called `search`.
 
@@ -130,6 +232,8 @@ search(){
 ## Add
 
 Next we are going to add axios to the Add.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will be in a method you will make called `post`.
 
@@ -159,6 +263,8 @@ post(){
 ## Edit
 
 Next we are going to add axios to the Edit.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios requests will be in a several methods you will make: `componentDidMount`, `updatePost`, and `deletePost`.
 
@@ -217,6 +323,11 @@ deletePost(){
 
 </details>
 </details>
+
+
+## User
+
+
 
 ## Contributions
 
