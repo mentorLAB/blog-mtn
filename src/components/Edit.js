@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ConfirmModal from './subcomponents/ConfirmModal';
 
-
+import axios from 'axios';
 
 class Edit extends Component {
     constructor(){
@@ -9,7 +9,7 @@ class Edit extends Component {
         this.state = {
             title: '',
             subTitle:'',
-            imgUrl:'',
+            image:'',
             text:'',
             confirm: ''
         }
@@ -19,30 +19,36 @@ class Edit extends Component {
     // Insert a componentDidMount method that does an axios request for the blog indicated by the param in the url
     componentDidMount(){
         axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            let blog = results.data[0]
             this.setState({
-                blog: results.data
+                title: blog.title,
+                subTitle: blog.subTitle,
+                image: blog.image,
+                text: blog.text,
+                original: blog
             })
         })
     }
 
     // Insert Submit function here that will use an Axios request:
     updatePost(){
-        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
         axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
             this.props.history.push(`/blog/${this.props.match.params.id}`)
-        })
+        }).catch(console.log)
     }
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
-        let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+        console.log(this.props.match.params.id)
         axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
+            console.log(this.props.match.params.id)
             this.props.history.push('/search')
-        })
+        }).catch(console.log)
     }
     
     render() {
-        let {title, subTitle, imgUrl, text} = this.state;
+        let {title, subTitle, image, text} = this.state;
         return (
             <div className='content'>
                 <div className="add-blog">
@@ -56,7 +62,7 @@ class Edit extends Component {
                     </div>
                     <div className="input-group">
                         <label htmlFor="">Photo Url</label>
-                        <input value={imgUrl} onChange={e=>this.imgUrlChange(e.target.value)} type="text"/>
+                        <input value={image} onChange={e=>this.imageChange(e.target.value)} type="text"/>
                     </div>
                     <div className="input-group text-input">
                         <label htmlFor="">Content</label>
@@ -65,7 +71,7 @@ class Edit extends Component {
                     <div className="buttons">
                         <button onClick={_=>this.delete()} className='delete-button' >Delete</button>
                         <button onClick={_=>this.cancel()} className='cancel-button'>Cancel</button>
-                        <button onClick={_=>this.update()} >Update</button>
+                        <button onClick={_=>this.updatePost()} >Update</button>
                     </div>
                     {
                         this.state.confirm
@@ -82,15 +88,15 @@ class Edit extends Component {
     yes(){
         if (this.state.confirm === 'discard'){
             this.setState({
-                title: '',
-                subTitle: '',
-                imgUrl: '',
-                text: '',
+                title: this.state.original.title,
+                subTitle: this.state.original.subTitle,
+                image: this.state.original.image,
+                text: this.state.original.text,
                 confirm: ''
             })
         }
         else{
-            this.deleteBlog()
+            this.deletePost()
         }
     }
     no(){
@@ -119,9 +125,9 @@ class Edit extends Component {
             subTitle: val
         })
     }
-    imgUrlChange(val){
+    imageChange(val){
         this.setState({
-            imgUrl: val
+            image: val
         })
     }
     textChange(val){
