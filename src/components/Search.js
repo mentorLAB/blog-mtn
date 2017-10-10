@@ -1,59 +1,74 @@
 import React, { Component } from 'react';
-import BlogTile from './subcomponents/BlogTile';
-
 import axios from 'axios';
+
+import BlogTile from './subcomponents/BlogTile';
+import UserTile from './subcomponents/UserTile';
+
 
 class Search extends Component{
     constructor(){
         super();
         this.state = {
             searchTerm: '',
-            searchResults: [],
+            blogResults: [],
+            userResults: [],
             searchType: 'blogs',
         }
     }
-
-    // Insert a componentDidMount method?
     
     // Insert a search method to make an axios request to setState -> display.
-    search(){
+    search(e){
+        e.preventDefault()
         console.log('searching');
-        axios.get(`/api/blogs?q=${this.state.searchTerm}`).then(results=>{
-            console.log(results.data);
-            this.setState({
-                searchResults: results.data
-            })
+        const { searchTerm, searchType }=this.state
+        axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
+            if(searchTerm==='blogs'){
+                this.setState({
+                    blogResults: response.data,
+                    userResults: []
+                })
+            }else{
+                this.setState({
+                    blogResults: [],
+                    userResults: response.data
+                })
+            }
         })
     }
     
     
     render(){
         // map over the searchResults here
-        const results = this.state.searchResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
+    const blogResults = this.state.blogResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
+        , userResults = this.state.userResults.map((c,i)=> <UserTile key={i} user={c}/>)
+
         return(
             <div className='content' >
-                <form className='search-group' onSubmit={_=>this.search()} >
+                <form className='search-group' onSubmit={e=>this.search(e)} >
                     <label htmlFor="">Search Blog Posts </label>
                     <input autoFocus onChange={e=>this.changeSearch(e.target.value)} value={this.state.searchTerm} type="text"/>
                     <button type="submit">Search</button>
-                    <input type='radio' name='searchType' value='blogs' onChange={e=>this.changeSearchType(e.target.value)}/> Blogs
-                    <input type='radio' name='searchType' value='users' onChange={e=>this.changeSearchType(e.target.value)}/> Users
+                    <div className='search-type'>
+                        <input defaultChecked={this.state.searchType==='blogs'}
+                        type='radio' name='searchType' value='blogs' onChange={e=>this.changeSearchType(e.target.value)}/> Blogs
+                        <input defaultChecked={this.state.searchType==='users'} type='radio' name='searchType' value='users' onChange={e=>this.changeSearchType(e.target.value)}/> Users
+                    </div>
                 </form>
                 <div className="blog-list">
                     {/* insert your mapped data from searchResults here */}
-                    {results}
+                    {blogResults}
+                    {userResults}
                 </div>
                 
             </div>
         )
     }
-    changeSearch(val){
+   changeSearch(val){
         this.setState({
             searchTerm: val
         })
     }
     changeSearchType(val){
-        val
         this.setState({
             searchType: val
         })
