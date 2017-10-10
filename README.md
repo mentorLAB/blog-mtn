@@ -99,6 +99,28 @@ Method: DELETE<br>
 `/api/user/:id` - Returns an empty object after deleting the indicated user.<br>
 `/api/blog/:id` - Returns an empty object after deleting the indicated blog post. <br>
 
+#### Data Models
+
+Blog Post: 
+
+```javascript
+{
+    name: "John Doe",
+    image: "https://usplash.it/600/300/?random",
+    title: "Blogs Need Titles",
+    subTitle: "They don't neccessarily have to have subtitles.",
+    text: "Content would go here.",
+    featured: true
+}
+```
+
+User: 
+
+```javascript
+{
+    name: "Andrew Garvin"
+}
+```
 
 ## Home view
 
