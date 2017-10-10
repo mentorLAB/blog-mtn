@@ -3,6 +3,7 @@
         {
             "id": 0,
             "name": "Andrew Garvin",
+            "userID": 0,
             "image": "http://delivery.gettyimages.com/xr/109072999.jpg?v=1&c=IWSAsset&k=3&d=77BFBA49EF87892102A727B1636DE2E61B7D42B8BC1F6B9121A86BE89F8F9103331E400E51A7E00DE30A760B0D811297",
             "title": "Ode To Brennys Cow",
             "subTitle": "A Gold-starred Haiku",
@@ -12,6 +13,7 @@
         {
             "id": 1,
             "name": "Brennon Schow",
+            "userID": 2,
             "image": "https://en.wikipedia.org/wiki/Llama#/media/File:Domestic_llama_(2009-05-19).jpg",
             "title": "Se llama llama",
             "subTitle": "I'm too confused",
@@ -21,6 +23,7 @@
         {
             "id": 2,
             "name": "Emily Keator",
+            "userID": 1,
             "image": "http://media2.giphy.com/media/nVXzt7FSJlX7W/giphy.gif",
             "title": "What to do if you think your mentor is an alien",
             "subTitle": "It's probably Alan",
@@ -30,6 +33,7 @@
         {
             "id": 3,
             "name": "Jeffrey",
+            "userID": 3,
             "image": "http://http.cat/418",
             "title": "I'm a little Teapot",
             "subTitle": "The Song we all Know and Love",
@@ -39,6 +43,7 @@
         {
             "id": 4,
             "name": "Andrew Garvin",
+            "userID": 0,
             "image": "http://cdn-image.foodandwine.com/sites/default/files/1470854446/baguette-vending-machine-fwx-1.jpg",
             "title": "The Devils Baker",
             "subTitle": "A history of the rick-roll",
@@ -48,6 +53,7 @@
         {
             "id": 5,
             "name": "Chris Anderson",
+            "userID": 4,
             "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
             "title": "A Bluegrass Dream",
             "subTitle": "A Kentucky Boy Stuck in Utah",
@@ -57,6 +63,7 @@
         {
             "id": 6,
             "name": "Janise Suski",
+            "userID": 5,
             "image": "http://www.onlinetypingjobs.org/wp-content/uploads/2016/10/typing-jobs.jpg",
             "title": "The Time A Camera Crew Recorded Me Typing",
             "subTitle": "Don't Type Louder",
@@ -66,6 +73,7 @@
         {
             "id": 7,
             "name": "R. J. Stewart",
+            "userID": 6,
             "image": "https://media.giphy.com/media/11gUHxG1ehyLfy/giphy.gif",
             "title": "Whiplash Pug",
             "subTitle": "Not quite my tempo.",
@@ -75,6 +83,7 @@
         {
             "id": 8,
             "name": "Thus Saith the Lloyd",
+            "userID": 7,
             "image": "https://i.pinimg.com/originals/dc/f9/84/dcf984f5698b5143696be337f3bf9e28.jpg (52kB) ",
             "title": "The Importance of Seperating Work and Home Life",
             "subTitle": "The consequences of using your precise logic skills and habits can cause stress in your home life.",
@@ -84,6 +93,7 @@
         {
             "id": 9,
             "name": "Andi Platter",
+            "userID": 8,
             "image": "https://i.ytimg.com/vi/KG1U8-i1evU/maxresdefault.jpg",
             "title": "Looking for a job",
             "subTitle": "ew",
@@ -93,6 +103,7 @@
         {
             "id": 10,
             "name":"David Fischer",
+            "userID": 9,
             "image":"http://soolnua.com/wp-content/themes/soolella/images/ice17/icecream-purple-pink.svg", 
             "title":"Getting a new job", 
             "subTitle":"Ben and Jerry's Ice Cream Flavor Namer", 
@@ -102,6 +113,7 @@
         {
             "id": 11,
             "name": "Brennon Schow",
+            "userID": 1,
             "image": "https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif",
             "title": "How to host on Digital Ocean",
             "subTitle": "A step-by-step guide",
@@ -110,6 +122,7 @@
         {
             "id": 12,
             "name": "Emily Keator",
+            "userID": 2,
             "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
             "title": "How to Win Over Andi Platter, Web Developer",
             "subTitle": "Just remember: she HATES dogs",
@@ -119,6 +132,7 @@
         {
             "id": 13,
             "name": "Emily Keator",
+            "userID": 2,
             "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
             "title": "How to Smash a Computer",
             "subTitle": "It's only $1000",
@@ -128,6 +142,7 @@
         {
             "id": 14,
             "name": "Emily Keator",
+            "userID": 2,
             "image": "https://latimesherocomplex.files.wordpress.com/2015/04/ca-0413-the-avengers-153.jpg",
             "title": "How to De-Bug",
             "subTitle": "Not recommended for Arachnophobes",
@@ -137,6 +152,7 @@
         {
             "id": 15,
             "name": "Brennon Schow",
+            "userID": 1,
             "image": "https://www.funnypica.com/wp-content/uploads/2012/06/Funny-Goat-01.jpg",
             "title": "Who Are You",
             "subTitle": "Who Are You, Really?",
@@ -146,6 +162,7 @@
         {
             "id": 16,
             "name": "Andrew Garvin",
+            "userID": 0,
             "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
             "title": "Here Kitty Kitty",
             "subTitle": "The story with an un-related title",
@@ -154,6 +171,7 @@
         {
             "id": 17,  
             "name":"Bryan Smith",
+            "userID": 10,
             "image":"https://static1.squarespace.com/static/58680ce2d1758e371522bf7f/5868b4695016e16d593b7a3d/58db1d895016e15e289c9b3d/1490759681172/Opa.JPG?format=2500w",
             "title":"It's just code, Bro",
             "subTitle":"An Ode to Code",
@@ -163,81 +181,92 @@
         { 
             "id": 18, 
             "name":"Sperry the Dog",
+            "userID": 11,
             "image":"https://pbs.twimg.com/media/DJfOPAiVYAAzWFB.jpg:large",
             "title":"I'm a dog",
             "subTitle":"Bark?",
             "text":"Sperry's my name and I'm a dog. I sleep most of the day, you could mistake me for a log\n\n My best friend is human, he looks kind funny. I'll eat anything including cumin \n\n I once ate a bee, swallowed it whole. Slept in masters bed and kept him from being cold \n\n I can't jump very high, maybe three inches but height doesn't matter when you are chasing...female dogs \n\n How am I talking? I'm just a dog? My owners a poet forced to write these blogs \n\n Woof woof \n\n Bark Bark \n\n Woof Woof.",
             "featured": false
         },
-        {   "id": 19,
+        {  
+            "id": 19,
+            "name":"Bryan Smith",
+            "userID": 10,
+            "image":"https://avatars1.githubusercontent.com/u/24623425?v=4&s=460",
+            "title":"Your Boy Brennon",
+            "subTitle":"Mentos & Diet Coke",
+            "text":"Hi, I'm Brennon and I hate shoes\n\n My hair is long and I'm spreading the news \n\n I fell down the stairs and met my wife \n\n Learned to code and changed my life \n\n I ride my bike to work \n\n Offering rides on my handlebars \n\n I AM BRENNON \n\n ",
+            "featured": false
+        },
+        {
+            "id": 20,
             "name": "Andrew Garvin",
-            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
+            "userID": 0,
+            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg (19kB) ",
             "title": "Here Kitty Kitty",
             "subTitle": "The story with an un-related title",
-            "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years- NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end",
+            "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years- NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end.",
             "featured": false
+        },
+        {
+            "id": 21,
+            "name": "Andi Platter",
+            "userID": 8,
+            "image": "https://cdn-media-2.lifehack.org/wp-content/files/2017/05/24045853/ariel_facepalm_at_scuttle_s_singing_by_arielfan90-daw1w7r.gif",
+            "title": "What is in my pants?!",
+            "subTitle": "A short embarrassing story",
+            "text": "HA okay, so this is a story all about how I embarrassed myself at camp bow wow. Wish I could make that song last for this whole story but no. So I worked at a doggie daycare called camp bow wow a few years ago. There was a guy who worked there as well and he was attractive. \n\n We usually traded shifts so when I came in he was finishing his shift. I had just done my laundry and I pulled my pants out of the dryer and put them on and went to work. When I got there cute boy was about to leave and we chatted for a bit before he did. I went to the back to help out and I touched the back of my leg.\n\n\n. \"OH MY GOSH WHAT IS IN MY PANTS?! I just talked to cute boy for like 10 minutes with a lump on my leg!\" I was so embarrassed and a little concerned. I've never had a tennis ball sized lump on my leg before. Worried I ran to the bathroom and found what was causing this lump... it was a freaking sock. \n\n\n\n How did I not notice there was a balled up sock in my pants? Still not sure, still embarrassed. The End",
+            "featured": true
         }
     ],
     "users": [
         {
             "id": 0,
-            "name": "Andrew Garvin",
-            "blogs": [0, 4, 16, 19]
+            "name": "Andrew Garvin"
         },
         {
             "id": 1,
-            "name": "Emily Keator",
-            "blogs": [2, 12, 13, 14]
+            "name": "Emily Keator"
         },
         {
             "id": 2,
-            "name": "Brennon Schow",
-            "blogs": [1, 11, 15]
+            "name": "Brennon Schow"
         },
         {
             "id": 3,
-            "name": "Jeffrey",
-            "blogs": [3]
+            "name": "Jeffrey"
         },
         {
             "id": 4,
-            "name": "Chris Anderson",
-            "blogs": [5]
+            "name": "Chris Anderson"
         },
         {
             "id": 5,
-            "name": "Janise Suski",
-            "blogs": [6]
+            "name": "Janise Suski"
         },
         {
             "id": 6,
-            "name":"R. J. Stewart",
-            "blogs": [7]
+            "name":"R. J. Stewart"
         },
         {
             "id": 7,
-            "name":"Thus Saith the Lloyd",
-            "blogs": [8]
+            "name":"Thus Saith the Lloyd"
         },
         {
             "id": 8,
-            "name":"Andi Platter",
-            "blogs": [9]
+            "name":"Andi Platter"
         },
         {
             "id":9,
-            "name":"David Fischer",
-            "blogs": [10]
+            "name":"David Fischer"
         },
         {
             "id": 10,
-            "name": "Bryan Smith",
-            "blogs": [17]
+            "name": "Bryan Smith"
         },
         {
             "id": 11,
-            "name":"Sperry the Dog",
-            "blogs": [18]
+            "name":"Sperry the Dog"
         }
     ]
 }
