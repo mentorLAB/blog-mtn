@@ -13,10 +13,10 @@ class Blog extends Component{
     }
 
     //insert a componentDidMount method with an axios call to the the data:
-    componentDidMount(){
+    componentWillMount(){
         axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
             this.setState({
-                blog: results.data[0]
+                blog: results.data
             })
         })
     }
