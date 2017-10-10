@@ -8,7 +8,7 @@ class Home extends Component{
     constructor(){
         super();
         this.state = {
-            featured: [{}],
+            featured: [{image: 'https://unsplash.it/900/400/?random'}],
             index: 0,
             posts: []
         }
