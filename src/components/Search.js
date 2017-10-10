@@ -21,6 +21,7 @@ class Search extends Component{
         e.preventDefault()
         console.log('searching');
         const { searchTerm, searchType }=this.state
+        console.log(searchTerm, searchType)
         axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
             if(searchTerm==='blogs'){
                 this.setState({
@@ -57,7 +58,7 @@ class Search extends Component{
                 <div className="blog-list">
                     {/* insert your mapped data from searchResults here */}
                     {blogResults}
-                    {userResults}
+                    {this.state.searchType==='users' && userResults}
                 </div>
                 
             </div>
