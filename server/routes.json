@@ -3,5 +3,6 @@
     "/blogs": "/blogs?_limit=10",
     "/featured": "/blogs?featured=true&_limit=10",
     "/blog/:id": "/blogs/:id",
-    "/users": "/users"
+    "/users": "/users",
+    "/blog/user/:id": "/blogs?userID=:id"
 }
