@@ -39,16 +39,16 @@ Method: GET<br>
 `/api/blog/user/:id` - Returns an array with all the blogs authored by the user indicated by the id param.<br>
 
 Method: POST<br>
-`/api/user/` - Returns an array with <br>
-`/api/blog/` - Returns an array with <br>
+`/api/users/` - Returns an object with the new user information including the id.<br>
+`/api/blogs/` - Returns an object with the new blog post information including the id.<br>
 
 Method: PUT<br>
-`/api/user/:id` - Returns an array with <br>
-`/api/blog/:id` - Returns an array with <br>
+`/api/users/:id` - Returns an object with the updated user.<br>
+`/api/blogs/:id` - Returns an object with the updated blog post.<br>
 
 Method: DELETE<br>
-`/api/user/:id` - Returns an array with <br>
-`/api/blog/:id` - Returns an array with <br>
+`/api/users/:id` - Returns an empty object after deleting the indicated user.<br>
+`/api/blogs/:id` - Returns an empty object after deleting the indicated blog post. <br>
 
  
 
@@ -57,6 +57,7 @@ Method: DELETE<br>
 Open the Home.js file in the components folder.
 Import axios near the top of the file:
 `import axios from 'axios';`
+
 Now, you will make a `componentDidMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
 
 Using the `.then` function on the axios call, set the `featured` property in state to the appropriate data in the results.
