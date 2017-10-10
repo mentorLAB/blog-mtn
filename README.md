@@ -33,7 +33,7 @@ To use axios you will import it into any component or Javascript file in which y
 `import axios from 'axios';`
 
 #### Methods
-For eact type of HTTP request you will use the appropriate axios method:
+For each type of HTTP request you will use the appropriate axios method:
 
 `axios.get()`
 `axios.post()`
@@ -167,7 +167,7 @@ Import axios near the top of the file:
 
 This axios request will also be in the `componentDidMount` method.
 
-The enpoint will be at `/api/blog/:id`. The `:id` is a parameter. Meaning that the http request will send whatever is after the `/` as a varible to select the corresponding blog from the api. For example: `/api/blog/5` indicates to the api to get the blog with an id of `5`.
+The endpoint will be at `/api/blog/:id`. The `:id` is a parameter. Meaning that the http request will send whatever is after the `/` as a varible to select the corresponding blog from the api. For example: `/api/blog/5` indicates to the api to get the blog with an id of `5`.
 
 This parameter is being used in the React routing also. You can access the parameter in react thusly: `this.props.match.params.id` in this case.
 
@@ -202,7 +202,7 @@ Import axios near the top of the file:
 
 This axios request will be in a method you will make called `search`.
 
-The enpoint will be at `/api/blogs`. 
+The endpoint will be at `/api/blogs`. 
 
 You are going to append a query to the end of the endpoint.
 
@@ -237,7 +237,7 @@ Import axios near the top of the file:
 
 This axios request will be in a method you will make called `post`.
 
-The enpoint will be at `/api/blog`.
+The endpoint will be at `/api/blog`.
 
 
 <details>
@@ -274,7 +274,7 @@ The `updatePost` method will be using a `put` request.
 
 The `deletePost` method will be using a `delete` request.
 
-The enpoint for all requests will be at `/api/blog/:id`.
+The endpoint for all requests will be at `/api/blog/:id`.
 You should notice that we are using a parameter again.
 This will be available via: `this.props.match.params.id`
 
