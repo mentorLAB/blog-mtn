@@ -113,7 +113,7 @@
             "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
             "title": "How to Win Over Andi Platter, Web Developer",
             "subTitle": "Just remember: she HATES dogs",
-            "text": "Step 1: Throw the giant rubber duck under the train, she considers it a menace. /nStep 2: Kick a puppy in front of her. /nStep 3: Every tuesday, jump out at her screaming 'SHIA SUPRISE!' /nStep 4: Spell her name with a Y, the way she says it's meant to be spelled. /nStep 5: Offer her a bunch of bananas, she loves them. /nStep 6: complain about how much you hate Sherlock, because she will immediately be drawn to you.",
+            "text": "Step 1: Throw the giant rubber duck under the train, she considers it a menace. \nStep 2: Kick a puppy in front of her. \nStep 3: Every tuesday, jump out at her screaming 'SHIA SUPRISE!' \nStep 4: Spell her name with a Y, the way she says it's meant to be spelled. \nStep 5: Offer her a bunch of bananas, she loves them. \nStep 6: complain about how much you hate Sherlock, because she will immediately be drawn to you.",
             "featured": false
         },
         {
@@ -122,7 +122,7 @@
             "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
             "title": "How to Smash a Computer",
             "subTitle": "It's only $1000",
-            "text": "Step 1: Place computer on a solid surface. /nStep 2: Obtain sledgehammer. /nStep 3: Raise hammer above head, 45 degree angle. /nStep 4: ARE YOU CRAZY DON'T SMASH YOUR COMPUTER THAT THING IS EXPENSIVE AND YOU WILL FIND THE ERROR! /nStep 5: Yoga.",
+            "text": "Step 1: Place computer on a solid surface. \nStep 2: Obtain sledgehammer. \nStep 3: Raise hammer above head, 45 degree angle. \nStep 4: ARE YOU CRAZY DON'T SMASH YOUR COMPUTER THAT THING IS EXPENSIVE AND YOU WILL FIND THE ERROR! \nStep 5: Yoga.",
             "featured": true
         },
         {
@@ -131,7 +131,7 @@
             "image": "https://latimesherocomplex.files.wordpress.com/2015/04/ca-0413-the-avengers-153.jpg",
             "title": "How to De-Bug",
             "subTitle": "Not recommended for Arachnophobes",
-            "text": "Step 1: Obtain a spider egg from a traveler from a distant land. /nStep 2: Raise your spider to a gigantic size over 20-odd years. /nStep 3: When a bug appears in your code, allow the giant spider to go on a rampage and eat every bug in the building. No humans!! Unless they are annoying. /nStep 4: This is really a terrible idea, but at least you will frighten your enemies.",
+            "text": "Step 1: Obtain a spider egg from a traveler from a distant land. \nStep 2: Raise your spider to a gigantic size over 20-odd years. \nStep 3: When a bug appears in your code, allow the giant spider to go on a rampage and eat every bug in the building. No humans!! Unless they are annoying. \nStep 4: This is really a terrible idea, but at least you will frighten your enemies.",
             "featured": true
         },
         {
@@ -168,13 +168,20 @@
             "subTitle":"Bark?",
             "text":"Sperry's my name and I'm a dog. I sleep most of the day, you could mistake me for a log\n\n My best friend is human, he looks kind funny. I'll eat anything including cumin \n\n I once ate a bee, swallowed it whole. Slept in masters bed and kept him from being cold \n\n I can't jump very high, maybe three inches but height doesn't matter when you are chasing...female dogs \n\n How am I talking? I'm just a dog? My owners a poet forced to write these blogs \n\n Woof woof \n\n Bark Bark \n\n Woof Woof.",
             "featured": false
+        },
+        {   "id": 19,
+            "name": "Andrew Garvin",
+            "image": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsQAAAAJGU2NzdkMjliLTdkNzgtNGE4Zi1iZjliLWIzNGViOTQxNTg1ZA.jpg",
+            "title": "Here Kitty Kitty",
+            "subTitle": "The story with an un-related title",
+            "text": "Earlier this year, on or around the 5th of april, as I was lying on my bed listening to my favorite podcast series, a strange, dark feeling began to come over me.\nThis was not something I had experienced before, but somehow I knew what it meant. It felt like a demon, from the very depths of my stomach were awaking after years- NAY - centuries of slumber! An unbearably intense desire began to enter my soul, and a single thought was dominating my mind...\n\n'NO!', I thought! 'I cannot stoop so low! I must resist!' This was the singular defense I had available to me. But alas, I was weak. I began to reach for my keys. Out the door I went, into the car, and off to where there was no return.\n\nWith my destination in sight, I began to rethink my entire existence.\nThere in the drive-thru line I waited patiently, slowing moving forward to my demise. Just then, the voice of the Devil himself echoed through the speakers... 'Welcome to Taco Bell...'\n\nI knew my life was over...\n\nThe end"
         }
     ],
     "users": [
         {
             "id": 0,
             "name": "Andrew Garvin",
-            "blogs": [0, 4, 16]
+            "blogs": [0, 4, 16, 19]
         },
         {
             "id": 1,

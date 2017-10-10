@@ -26,6 +26,31 @@ You can make sure the project is ready to work on by running:
 Install axios into the project:
 `npm install axios --save`
 
+## Api Documentation
+
+#### Endpoints
+
+Method: GET
+`/api/user/:id`
+`/api/users`
+`/api/blog/:id`
+`/api/blogs`
+`/api/featured`
+`/api/blog/user/:id`
+
+Method: POST
+`/api/user/`
+`/api/blog/`
+
+Method: PUT
+`/api/user/:id`
+`/api/blog/:id`
+
+Method: DELETE
+`/api/user/:id`
+`/api/blog/:id`
+
+ 
 
 ## Home view
 
@@ -64,6 +89,8 @@ componentDidMount(){
 
 ## Blog
 Next we are going to add axios to the Blog.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will also be in the `componentDidMount` method.
 
@@ -97,6 +124,8 @@ componentDidMount(){
 ## Search
 
 Next we are going to add axios to the Search.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will be in a method you will make called `search`.
 
@@ -130,6 +159,8 @@ search(){
 ## Add
 
 Next we are going to add axios to the Add.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios request will be in a method you will make called `post`.
 
@@ -159,6 +190,8 @@ post(){
 ## Edit
 
 Next we are going to add axios to the Edit.js component.
+Import axios near the top of the file:
+`import axios from 'axios';`
 
 This axios requests will be in a several methods you will make: `componentDidMount`, `updatePost`, and `deletePost`.
 
@@ -217,6 +250,12 @@ deletePost(){
 
 </details>
 </details>
+
+
+## User
+
+## User
+
 
 ## Contributions
 
