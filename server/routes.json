@@ -5,5 +5,5 @@
     "/blog/:id": "/blogs/:id",
     "/users": "/users",
     "/user/:id": "/users/:id",
-    "/blogs/user/:id": ""
+    "/blogs/user/:id": "/blogs?userID=:id"
 }

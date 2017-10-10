@@ -8,7 +8,8 @@ class Search extends Component{
         super();
         this.state = {
             searchTerm: '',
-            searchResults: []
+            searchResults: [],
+            searchType: 'blogs',
         }
     }
 
@@ -35,6 +36,8 @@ class Search extends Component{
                     <label htmlFor="">Search Blog Posts </label>
                     <input autoFocus onChange={e=>this.changeSearch(e.target.value)} value={this.state.searchTerm} type="text"/>
                     <button type="submit">Search</button>
+                    <input type='radio' name='searchType' value='blogs' onChange={e=>this.changeSearchType(e.target.value)}/> Blogs
+                    <input type='radio' name='searchType' value='users' onChange={e=>this.changeSearchType(e.target.value)}/> Users
                 </form>
                 <div className="blog-list">
                     {/* insert your mapped data from searchResults here */}
@@ -47,6 +50,12 @@ class Search extends Component{
     changeSearch(val){
         this.setState({
             searchTerm: val
+        })
+    }
+    changeSearchType(val){
+        val
+        this.setState({
+            searchType: val
         })
     }
 }
