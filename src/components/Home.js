@@ -20,14 +20,10 @@ class Home extends Component{
             let newIndex= (~~(Math.random() * results.data.length) + 0)
             this.setState({
                 featured: results.data,
-                index: newIndex
-            })
-        })
-        axios.get(`/api/blogs`).then(results=>{
-            this.setState({
+                index: newIndex,
                 posts: results.data
             })
-        })
+        }).catch(console.log)
     }
 
     render(){

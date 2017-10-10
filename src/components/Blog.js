@@ -18,7 +18,7 @@ class Blog extends Component{
             this.setState({
                 blog: results.data
             })
-        })
+        }).catch(console.log)
     }
     
     render(){

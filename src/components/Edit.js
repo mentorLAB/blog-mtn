@@ -27,7 +27,7 @@ class Edit extends Component {
                 text: blog.text,
                 original: blog
             })
-        })
+        }).catch(console.log)
     }
 
     // Insert Submit function here that will use an Axios request:

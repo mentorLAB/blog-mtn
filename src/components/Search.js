@@ -19,16 +19,19 @@ class Search extends Component{
     // Insert a search method to make an axios request to setState -> display.
     search(e){
         e.preventDefault()
-        console.log('searching');
+        console.log('searching type: ', this.state.searchType);
+        console.log(`/api/${searchType}?q=${searchTerm}`);
         const { searchTerm, searchType }=this.state
         console.log(searchTerm, searchType)
         axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
-            if(searchTerm==='blogs'){
+            if(searchType==='blogs'){
+                console.log(searchTerm);
                 this.setState({
                     blogResults: response.data,
                     userResults: []
                 })
             }else{
+                console.log(searchTerm);
                 this.setState({
                     blogResults: [],
                     userResults: response.data
@@ -40,8 +43,8 @@ class Search extends Component{
     
     render(){
         // map over the searchResults here
-    const blogResults = this.state.blogResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
-        , userResults = this.state.userResults.map((c,i)=> <UserTile key={i} user={c}/>)
+        const blogResults = this.state.blogResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
+        const userResults = this.state.userResults.map((c,i)=> <UserTile key={i} user={c}/>)
 
         return(
             <div className='content' >
@@ -65,6 +68,7 @@ class Search extends Component{
         )
     }
    changeSearch(val){
+       console.log(val)
         this.setState({
             searchTerm: val
         })

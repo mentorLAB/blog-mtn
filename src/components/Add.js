@@ -26,7 +26,7 @@ class Add extends Component {
         axios.post('/api/blogs', body).then(results=>{
             console.log(results.data);
             this.props.history.push(`/blog/${results.data.id}`)
-        })
+        }).catch(console.log)
     }
 
     
