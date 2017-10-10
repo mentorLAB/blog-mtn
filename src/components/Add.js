@@ -18,16 +18,8 @@ class Add extends Component {
 
     }
 
-    //search endpoint = api/blogs?q=whateverthingtosearch
-
     // Insert post function here that will use an Axios request:
-    post(){
-        let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
-        axios.post('/api/blogs', body).then(results=>{
-            console.log(results.data);
-            this.props.history.push(`/blog/${results.data.id}`)
-        }).catch(console.log)
-    }
+    
 
     
     render() {

@@ -15,16 +15,6 @@ class Home extends Component{
     }
 
     // Make a componentDidMount method here:
-    componentDidMount(){
-        axios.get('/api/featured').then(results=>{
-            let newIndex= (~~(Math.random() * results.data.length) + 0)
-            this.setState({
-                featured: results.data,
-                index: newIndex,
-                posts: results.data
-            })
-        }).catch(console.log)
-    }
 
     render(){
         // map over your recommended blogs here

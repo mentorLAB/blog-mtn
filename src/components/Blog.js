@@ -13,13 +13,7 @@ class Blog extends Component{
     }
 
     //insert a componentDidMount method with an axios call to the the data:
-    componentWillMount(){
-        axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
-            this.setState({
-                blog: results.data
-            })
-        }).catch(console.log)
-    }
+    
     
     render(){
         const blog = this.state.blog;
