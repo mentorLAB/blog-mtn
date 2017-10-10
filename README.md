@@ -101,6 +101,8 @@ Method: DELETE<br>
 
 #### Data Models
 
+The following data templates (sometimes called schemas) are what the POST and PUT endpoint expect. 
+
 Blog Post: 
 
 ```javascript
