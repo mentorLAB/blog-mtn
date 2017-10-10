@@ -33,16 +33,14 @@ class Edit extends Component {
     // Insert Submit function here that will use an Axios request:
     updatePost(){
         let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
-        axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
+        axios.put(`/api/blogs/${this.props.match.params.id}`, body).then(results=>{
             this.props.history.push(`/blog/${this.props.match.params.id}`)
         }).catch(console.log)
     }
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
-        console.log(this.props.match.params.id)
-        axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
-            console.log(this.props.match.params.id)
+        axios.delete(`/api/blogs/${this.props.match.params.id}`).then(results=>{
             this.props.history.push('/search')
         }).catch(console.log)
     }
