@@ -31,24 +31,24 @@ Install axios into the project:
 #### Endpoints
 
 Method: GET
-`/api/user/:id`
-`/api/users`
-`/api/blog/:id`
-`/api/blogs`
-`/api/featured`
-`/api/blog/user/:id`
+`/api/user/:id` - Returns an array with one user object if the id matches a user in the database.
+`/api/users` - Returns an array with 10 users paginated. Also accepts a query for searching users.
+`/api/blog/:id` - Returns an array with one blog object if the id matcher a blog in the database.
+`/api/blogs` - Returns an array with 10 blogs paginated. Also accepts a query for searching blogs.
+`/api/featured` - Returns an array with the blogs marked as featured.
+`/api/blog/user/:id` - Returns an array with all the blogs authored by the user indicated by the id param.
 
 Method: POST
-`/api/user/`
-`/api/blog/`
+`/api/user/` - Returns an array with 
+`/api/blog/` - Returns an array with 
 
 Method: PUT
-`/api/user/:id`
-`/api/blog/:id`
+`/api/user/:id` - Returns an array with 
+`/api/blog/:id` - Returns an array with 
 
 Method: DELETE
-`/api/user/:id`
-`/api/blog/:id`
+`/api/user/:id` - Returns an array with 
+`/api/blog/:id` - Returns an array with 
 
  
 
