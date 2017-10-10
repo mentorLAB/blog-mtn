@@ -3,6 +3,7 @@
         {
             "id": 0,
             "name": "Andrew Garvin",
+            "userID": 0,
             "image": "http://delivery.gettyimages.com/xr/109072999.jpg?v=1&c=IWSAsset&k=3&d=77BFBA49EF87892102A727B1636DE2E61B7D42B8BC1F6B9121A86BE89F8F9103331E400E51A7E00DE30A760B0D811297",
             "title": "Ode To Brennys Cow",
             "subTitle": "A Gold-starred Haiku",
@@ -12,6 +13,7 @@
         {
             "id": 1,
             "name": "Brennon Schow",
+            "userID": 2,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Domestic_llama_%282009-05-19%29.jpg/800px-Domestic_llama_%282009-05-19%29.jpg",
             "title": "Se llama llama",
             "subTitle": "I'm too confused",
@@ -174,62 +176,50 @@
         {
             "id": 0,
             "name": "Andrew Garvin",
-            "blogs": [0, 4, 16]
         },
         {
             "id": 1,
             "name": "Emily Keator",
-            "blogs": [2, 12, 13, 14]
         },
         {
             "id": 2,
             "name": "Brennon Schow",
-            "blogs": [1, 11, 15]
         },
         {
             "id": 3,
             "name": "Jeffrey",
-            "blogs": [3]
         },
         {
             "id": 4,
             "name": "Chris Anderson",
-            "blogs": [5]
         },
         {
             "id": 5,
             "name": "Janise Suski",
-            "blogs": [6]
         },
         {
             "id": 6,
             "name":"R. J. Stewart",
-            "blogs": [7]
         },
         {
             "id": 7,
             "name":"Thus Saith the Lloyd",
-            "blogs": [8]
         },
         {
             "id": 8,
             "name":"Andi Platter",
-            "blogs": [9]
         },
         {
             "id":9,
             "name":"David Fischer",
-            "blogs": [10]
         },
         {
             "id": 10,
             "name": "Bryan Smith",
-            "blogs": [17]
         },
         {
             "id": 11,
             "name":"Sperry the Dog",
-            "blogs": [18]
         }
     ]
 }
