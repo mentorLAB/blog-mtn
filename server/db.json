@@ -128,7 +128,9 @@
             "blogs": [7]
         },
         {
-            "id": 
+            "id": 7,
+            "name": "Thus Saith the Lloyd",
+            "blogs": [8]
         }
     ]
 }

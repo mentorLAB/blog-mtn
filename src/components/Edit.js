@@ -24,7 +24,8 @@ class Edit extends Component {
                 title: blog.title,
                 subTitle: blog.subTitle,
                 image: blog.image,
-                text: blog.text
+                text: blog.text,
+                original: blog
             })
         })
     }
@@ -34,14 +35,14 @@ class Edit extends Component {
         let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
         axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
             this.props.history.push(`/blog/${this.props.match.params.id}`)
-        })
+        }).catch(console.log)
     }
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
         axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
             this.props.history.push('/search')
-        })
+        }).catch(console.log)
     }
     
     render() {
@@ -68,7 +69,7 @@ class Edit extends Component {
                     <div className="buttons">
                         <button onClick={_=>this.delete()} className='delete-button' >Delete</button>
                         <button onClick={_=>this.cancel()} className='cancel-button'>Cancel</button>
-                        <button onClick={_=>this.update()} >Update</button>
+                        <button onClick={_=>this.updatePost()} >Update</button>
                     </div>
                     {
                         this.state.confirm
@@ -85,10 +86,10 @@ class Edit extends Component {
     yes(){
         if (this.state.confirm === 'discard'){
             this.setState({
-                title: '',
-                subTitle: '',
-                image: '',
-                text: '',
+                title: this.state.original.title,
+                subTitle: this.state.original.subTitle,
+                image: this.state.original.image,
+                text: this.state.original.text,
                 confirm: ''
             })
         }
