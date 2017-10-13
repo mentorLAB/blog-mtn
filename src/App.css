@@ -98,6 +98,8 @@ a{
   width: 200px;
   height: 200px;
   background-color: #777;
+  background-size: cover;
+  background-position: center;
   color: white;
   text-shadow: 1px 1px 6px #111, -1px -1px 6px #111;
   display: grid;
@@ -209,6 +211,8 @@ a{
   padding: 25px 10%;
 }
 .blog-img{
+  background-size: cover;
+  background-position: center;
   height: 400px;
   width: 100vw;
   color: white;
