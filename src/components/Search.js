@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BlogTile from './subcomponents/BlogTile';
 
-import axios from 'axios';
+
 
 class Search extends Component{
     constructor(){

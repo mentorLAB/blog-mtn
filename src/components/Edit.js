@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ConfirmModal from './subcomponents/ConfirmModal';
 
-import axios from 'axios';
+
 
 class Edit extends Component {
     constructor(){
