@@ -21,8 +21,7 @@ class Search extends Component{
     search(e){
         e.preventDefault()
         const { searchTerm, searchType }=this.state
-        console.log('searching type: ', this.state.searchType);
-        console.log(`/api/${searchType}?q=${searchTerm}`);
+        
         axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
             if(searchType==='blogs'){
                 this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))

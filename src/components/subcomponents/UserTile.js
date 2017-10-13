@@ -8,9 +8,8 @@ class UserTile extends Component{
         const user=this.props.user
 
         return(
-            <Link to={`/users/${user.id}`} className="UserTile">
-                {/* <img src={user.img} alt="profile"/> */}
-                <img src={'https://unsplash.it/300/?random'} alt="profile"/>
+            <Link to={`/user/${user.id}`} className="UserTile">
+                {user.img ? <img src={user.img} alt="profile pic"/> :<img src={'https://unsplash.it/300/?random'} alt="profile pic"/>}
                 <h1>{user.name}</h1>
                 <p>{user.desc}</p>
             </Link>

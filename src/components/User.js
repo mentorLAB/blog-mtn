@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import BlogTile from './subcomponents/BlogTile';
+
+// import axios
 import axios from 'axios'
 
 class User extends Component{
@@ -6,36 +9,48 @@ class User extends Component{
         super()
 
         this.state={
-            name: '',
-            img: '',
-            desc: ''
+            user: {},
+            posts: []
         }
     }
 
     /*
     on componentWillMount, make an axios call to the DB 
-    to retreive the requested user information 
+    to retrieve the requested user information 
     and set it to state
     */
     componentWillMount(){
-        debugger
-        axios.get(`/api/user/${this.props.match.params.id}`).then(response=>{
-            let { name, img, desc } = response.data
+        let userID = this.props.match.params.id;
+        axios.get(`/api/user/${userID}`).then(response=>{
+            let user = response.data
             this.setState({
-                name,
-                img,
-                desc
-            })  
+                user: user
+            })
+        })
+        axios.get(`/api/blogs?userID=${userID}`).then(response=>{
+            console.log(response);
+            this.setState({
+                posts: response.data
+            })
         })
     }
 
     render(){
+        const user = this.state.user
+        const posts = this.state.posts.map((c,i)=><BlogTile key={i} blog={c}/>)
         return (
-            <div className='User'>
-                {this.state.img &&
-                <img src={this.state.img} alt='profile'/>}
-                <h1>{this.state.name}</h1>
-                <p>{this.state.desc}</p>
+            <div className='content'>
+                <div className="profile">
+                        {user.img ? <img src={user.img} alt="profile pic"/> :<img src={'https://unsplash.it/300/?random'} alt="profile pic"/>}
+                        <span>
+                            <h1>{user.name}</h1>
+                            <p>{user.desc}</p>
+                        </span>
+                </div>
+                <div className="post-list">
+                    <h2>Posts by User:</h2>
+                    {posts.length? posts : <p>No Blog Posts from this User</p>}
+                </div>
             </div>
         )
     }

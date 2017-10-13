@@ -256,7 +256,9 @@
     },
     {
       "id": 7,
-      "name": "Thus Saith the Lloyd"
+      "name": "Thus Saith the Lloyd",
+      "img": "https://preview.ibb.co/mKG7GG/Screen_Shot_2017_10_10_at_3_29_12_PM.png",
+      "desc": "Mentor Extraordinaire!"
     },
     {
       "id": 8,
@@ -276,7 +278,14 @@
     },
     {
       "id": 11,
-      "name": "Sperry the Dog"
+      "name": "Sperry the Dog",
+      "desc": "Woof"
+    },
+    {
+      "id": 12,
+      "name": "Leo",
+      "img": "https://unsplash.it/300/?random",
+      "desc": "I'm not real. I'm just a pseudonym of a guy that doesn't like waiting for fast food workers to figure out how to spell his name."
     }
   ]
 }
