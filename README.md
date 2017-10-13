@@ -3,12 +3,12 @@
 # Http-afternoon Project
 
 ## Setup
-First you will want to fork and clone this repo and install the necessary npm packages.
+First you will need to fork and clone this repo and install the necessary npm packages.
 
 #### Fork and Clone
-In your terminal navigate to the folder that will contain this afternoon project.Then clone the repo with this command:
+In your terminal navigate to the folder that will contain this afternoon project. Then clone the repo with this command:
 
-`git clone https://github.com/DevMountain/http-afternoon`
+`git clone ` and the address of your forked copy. e.g.: `git clone https://github.com/[YOUR-USER-NAME]/react-axios.git`
 
 Next cd into the new project folder:
 `cd http-afternoon`
@@ -40,12 +40,12 @@ For each type of HTTP request you will use the appropriate axios method:
 `axios.put()`
 `axios.delete()`
 
-The methods `get` and `delete` will take a string indicating the API endpoint route or URL.
+The methods `get` and `delete` will take a string indicating the API endpoint route or URL. e.g.:
 
 `axios.get('/api/blogs')` or `axios.get('https://swapi.co/api/people/1/')`
 
-The methods `post` and `put` will take a string and an optional object.
-This object will usually contain the information that you are putting on the database. It will need to be structured according the the API's documentation.
+The methods `post` and `put` will also take a string and can take an optional object as arguments.
+This object will usually contain the information that you are putting on the database. It will need to be structured with the appropriate properties according the the API's documentation.
 
 For example:
 
@@ -56,10 +56,12 @@ axios.post('/api/users', user)
 
 #### Promises
 
-Axios methods return promise objects. This allows for other code to run until your request receives a response
+Axios methods return promise objects. This allows for other code to run until your request receives a response.
 
 To handle the response you will use the `.then` method for fulfilled requests and the `.catch` method for rejected requests;
 Each of these methods take a callback function. `.then` will give you the response object and `.catch` will give you the error (usually the reason for rejection.)
+
+You should note that promises are asynchronous. This means that any code that is dependant upon the response from the axios request or that needs to be run after the response arrives, should be in the callback function in the `.then` or `.catch`.
 
 For example:
 
@@ -76,6 +78,8 @@ axios.get('/api/user/56812').then(response=>{
 ```
 
 ## Api Documentation
+
+In this section we will try to describe each endpoint and the expected results.
 
 #### Endpoints
 
