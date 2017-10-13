@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 class UserTile extends Component{
 
@@ -7,11 +8,11 @@ class UserTile extends Component{
         const user=this.props.user
 
         return(
-            <div className="UserTile">
+            <Link to={`/users/${user.id}`} className='UserTile'>
                 <img src={user.img} alt="profile"/>
                 <h1>{user.name}</h1>
                 <p>{user.desc}</p>
-            </div>
+            </Link>
         )
     }
 }
