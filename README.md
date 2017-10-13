@@ -120,11 +120,13 @@ Blog Post:
 }
 ```
 
-User: 
+Post User: 
 
 ```javascript
 {
-    name: "Andrew Garvin"
+    "name": "Andrew Garvin",
+    "img": "https://unsplash.it/300/?random",
+    "desc": "Descriptions are over rated, unlike Rick Rolls."
 }
 ```
 

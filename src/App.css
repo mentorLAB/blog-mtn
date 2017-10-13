@@ -115,6 +115,29 @@ a{
   grid-template-rows: 1fr 3fr;
 }
 
+.search-view{
+  grid-template-rows: 41px 1fr;
+}
+.search-group{
+  font-weight: bold;
+  width: 60%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 100px 1fr 55px 60px;
+  align-items: center;
+}
+.search-type{
+  display: grid;
+  grid-gap: 5px;
+}
+.search-type span{
+  display: flex;
+}
+.search-type input{
+  margin-right: 5px;
+}
+
+
 .blog-grid{
   padding: 25px;
   display: grid;
@@ -123,7 +146,7 @@ a{
 }
 
 .blog-list{
-  padding-top: 25px;
+  padding: 25px 0;
   width: 80%;
   display: grid;
   grid-gap: 25px;
@@ -152,15 +175,25 @@ a{
   margin-top: 15px;
 }
 
-
-.search-group{
-  font-weight: bold;
-  width: 60%;
+.UserTile{
+  box-shadow: 2px 2px 1px 1px rgba(5,5,5,0.1);
+  padding: 15px;
+  cursor: pointer;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 145px 1fr 60px;
-  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
 }
+
+.UserTile img{
+  height: 200px;
+  width: 200px;
+  grid-row: 1 / 3;
+}
+
+.UserTile:hover{
+  box-shadow: 3px 3px 1px 1px rgba(5,5,5,0.2);
+}
+
 
 .add-blog{
   width: 80%;
@@ -253,6 +286,7 @@ a{
 .box button{
   width: 100%;
 }
+
 
 .app-footer{
   width: 100%;
