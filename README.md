@@ -3,7 +3,7 @@
 # Http-afternoon Project
 
 ## Setup
-First you will want to fork and clone this repo and install the neccissary npm packages.
+First you will want to fork and clone this repo and install the necessary npm packages.
 
 #### Fork and Clone
 In your terminal navigate to the folder that will contain this afternoon project.Then clone the repo with this command:
@@ -56,7 +56,7 @@ axios.post('/api/users', user)
 
 #### Promises
 
-Axios methods return promise objects. This allows for other code to run until your request recieves a response
+Axios methods return promise objects. This allows for other code to run until your request receives a response
 
 To handle the response you will use the `.then` method for fulfilled requests and the `.catch` method for rejected requests;
 Each of these methods take a callback function. `.then` will give you the response object and `.catch` will give you the error (usually the reason for rejection.)
@@ -110,7 +110,7 @@ Blog Post:
     name: "John Doe",
     image: "https://usplash.it/600/300/?random",
     title: "Blogs Need Titles",
-    subTitle: "They don't neccessarily have to have subtitles.",
+    subTitle: "They don't necessarily have to have subtitles.",
     text: "Content would go here.",
     featured: true
 }
@@ -167,7 +167,7 @@ Import axios near the top of the file:
 
 This axios request will also be in the `componentDidMount` method.
 
-The endpoint will be at `/api/blog/:id`. The `:id` is a parameter. Meaning that the http request will send whatever is after the `/` as a varible to select the corresponding blog from the api. For example: `/api/blog/5` indicates to the api to get the blog with an id of `5`.
+The endpoint will be at `/api/blog/:id`. The `:id` is a parameter. Meaning that the http request will send whatever is after the `/` as a variable to select the corresponding blog from the api. For example: `/api/blog/5` indicates to the api to get the blog with an id of `5`.
 
 This parameter is being used in the React routing also. You can access the parameter in react thusly: `this.props.match.params.id` in this case.
 
@@ -247,7 +247,7 @@ The endpoint will be at `/api/blog`.
 
 ```javascript
 post(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.post('/api/blog', body).then(results=>{
         this.setState({
             searchResults: results.data
@@ -307,14 +307,14 @@ componentDidMount(){
 }
 
 updatePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.put(`/api/blog/${this.props.match.params.id}`, body).then(results=>{
         this.props.history.push(`/blog/${this.props.match.params.id}`)
     })
 }
 
 deletePost(){
-    let body = {title: this.state.title, subTitle: this.state.subTitle, imgUrl: this.state.imgUrl, text: this.state.text}
+    let body = {title: this.state.title, subTitle: this.state.subTitle, image: this.state.image, text: this.state.text}
     axios.delete(`/api/blog/${this.props.match.params.id}`).then(results=>{
         this.props.history.push('/search')
     })

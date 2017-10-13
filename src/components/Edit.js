@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ConfirmModal from './subcomponents/ConfirmModal';
 
-
+import axios from 'axios';
 
 class Edit extends Component {
     constructor(){
@@ -9,7 +9,7 @@ class Edit extends Component {
         this.state = {
             title: '',
             subTitle:'',
-            imgUrl:'',
+            image:'',
             text:'',
             confirm: ''
         }
@@ -20,7 +20,7 @@ class Edit extends Component {
     
 
     // Insert Submit function here that will use an Axios request:
-
+    
 
     // Insert into the deleteBlog method an axios delete request 
     deletePost(){
@@ -28,7 +28,7 @@ class Edit extends Component {
     }
     
     render() {
-        let {title, subTitle, imgUrl, text} = this.state;
+        let {title, subTitle, image, text} = this.state;
         return (
             <div className='content'>
                 <div className="add-blog">
@@ -42,7 +42,7 @@ class Edit extends Component {
                     </div>
                     <div className="input-group">
                         <label htmlFor="">Photo Url</label>
-                        <input value={imgUrl} onChange={e=>this.imgUrlChange(e.target.value)} type="text"/>
+                        <input value={image} onChange={e=>this.imageChange(e.target.value)} type="text"/>
                     </div>
                     <div className="input-group text-input">
                         <label htmlFor="">Content</label>
@@ -51,7 +51,7 @@ class Edit extends Component {
                     <div className="buttons">
                         <button onClick={_=>this.delete()} className='delete-button' >Delete</button>
                         <button onClick={_=>this.cancel()} className='cancel-button'>Cancel</button>
-                        <button onClick={_=>this.update()} >Update</button>
+                        <button onClick={_=>this.updatePost()} >Update</button>
                     </div>
                     {
                         this.state.confirm
@@ -68,15 +68,15 @@ class Edit extends Component {
     yes(){
         if (this.state.confirm === 'discard'){
             this.setState({
-                title: '',
-                subTitle: '',
-                imgUrl: '',
-                text: '',
+                title: this.state.original.title,
+                subTitle: this.state.original.subTitle,
+                image: this.state.original.image,
+                text: this.state.original.text,
                 confirm: ''
             })
         }
         else{
-            this.deleteBlog()
+            this.deletePost()
         }
     }
     no(){
@@ -105,9 +105,9 @@ class Edit extends Component {
             subTitle: val
         })
     }
-    imgUrlChange(val){
+    imageChange(val){
         this.setState({
-            imgUrl: val
+            image: val
         })
     }
     textChange(val){
