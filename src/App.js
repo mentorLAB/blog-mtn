@@ -11,6 +11,7 @@ import Blog from './components/Blog'
 import Add from './components/Add'
 import Edit from './components/Edit'
 import User from './components/User'
+import NewUser from './components/NewUser'
 
 class App extends Component {
   render() {
@@ -18,7 +19,8 @@ class App extends Component {
       <div className="App">
         <Header/>
         <Switch>
-          <Route path='/blog/:id' component={User} />
+          <Route path='/user' component={NewUser} />
+          <Route path='/user/:id' component={User} />
           <Route path='/blog/:id' component={Blog} />
           <Route path='/add' component={Add} />
           <Route path='/edit/:id' component={Edit} />

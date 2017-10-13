@@ -18,7 +18,8 @@ class User extends Component{
     and set it to state
     */
     componentWillMount(){
-        axios.get(`/api/users/${this.props.match.params.id}`).then(response=>{
+        debugger
+        axios.get(`/api/user/${this.props.match.params.id}`).then(response=>{
             let { name, img, desc } = response.data
             this.setState({
                 name,
