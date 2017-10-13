@@ -61,7 +61,7 @@ class Search extends Component{
                 <div className="blog-list">
                     {/* insert your mapped data from searchResults here */}
                     {blogResults}
-                    {this.state.searchType==='users' && userResults}
+                    {userResults}
                 </div>
                 
             </div>
