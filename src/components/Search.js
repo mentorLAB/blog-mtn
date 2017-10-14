@@ -4,6 +4,7 @@ import BlogTile from './subcomponents/BlogTile';
 import UserTile from './subcomponents/UserTile';
 
 // import axios
+import axios from 'axios'
 
 class Search extends Component{
     constructor(){
@@ -21,7 +22,10 @@ class Search extends Component{
     
     
     render(){
-        // map over the searchResults here
+        // map over the blogResults and userResults here, replace the empty array.
+        const blogResults = []
+        const userResults = []
+
         return(
             <div className='content search-view' >
                 <form className='search-group' onSubmit={e=>this.search(e)} >

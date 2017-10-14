@@ -9,16 +9,16 @@ class Home extends Component{
         super();
         this.state = {
             index: 0,
-            posts: [{image: 'https://unsplash.it/900/400/?random'}]
+            posts: [{title: "Loading...",image: 'https://unsplash.it/900/400/?random'}]
         }
     }
 
-    // Make a componentDidMount method here:
+    // Make a componentWillMount method here:
     
 
     render(){
-        // map over your recommended blogs here
-        
+        // map over your recommended blogs here, replace null.
+        const posts = null
 
         return(
             <div className="content" >

@@ -34,7 +34,9 @@ To use axios you will import it into any component or Javascript file in which y
 
 ## NPM Start
 
-After all the packages have installed, start up the project by running `npm start`
+After all the packages have installed, start up the project by running `npm start`.
+
+If you have installed axios and the other default npm packages, you should see a non-functional blog website.
 
 
 #### Methods
@@ -141,7 +143,7 @@ Open the Home.js file in the components folder.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
-Now, you will make a `componentDidMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
+Now, you will make a `componentWillMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
 
 Using the `.then` function on the axios call, set the `featured` property in state to the appropriate data in the results.
 
@@ -161,7 +163,7 @@ Lastly, add a `.catch(console.log)` to the end of `.then` for error reporting.
 
 ```javascript
 ...
-componentDidMount(){
+componentWillMount(){
     axios.get('/api/featured').then(results=>{
         this.setState({
             featured: results.data,

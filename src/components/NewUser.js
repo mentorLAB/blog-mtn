@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 //import axios
+import axios from 'axios'
 
 class NewUser extends Component{
     constructor(){
