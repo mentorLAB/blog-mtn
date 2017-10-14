@@ -18,11 +18,11 @@ class Search extends Component{
     }
     
     
-    // Insert a search method to make an axios request to setState -> display.
+    // Insert a search method to make an axios request
     
     
     render(){
-        // map over the blogResults and userResults here, replace the empty array.
+        // map over the blogResults and userResults here, replace the empty arrays.
         const blogResults = []
         const userResults = []
 
