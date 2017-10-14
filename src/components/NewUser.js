@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
 //import axios
 import axios from 'axios';
 
@@ -11,28 +12,24 @@ class NewUser extends Component{
             desc: ''
         }
     }
+    
+    // Insert addUser method here:
+    addUser(){
+        axios.post('/api/users', this.state).then(response=>{
+            console.log(response)
+            let user = response.data
+            this.props.history.push(`/user/${user.id}`)
+        })
+    }
 
-    /*
-    build a method called addUser that will send the 
-    state object to '/api/users' to be added as a new user 
-    and then reroute to the newly created users' page 
-    ('/user/' + id).
-    */
-
-    addUser(e){
-        e.preventDefault();
-        if (this.state.name){
-            axios.post('/api/users', this.state).then(response=>{
-                console.log(response)
-                let user = response.data
-                this.props.history.push(`/user/${user.id}`)
-            })
-        } else {
-            this.setState({warn: true})
-            setTimeout(()=> {
-                this.setState({warn: false})
-            }, 2000);
-        }
+    // Insert updateUser method here:    
+    updateUser(){
+        let id = this.props.match.params.id        
+        axios.put(`/api/user/${id}`, this.state).then(response=>{
+            console.log(response)
+            let user = response.data
+            this.props.history.push(`/user/${user.id}`)
+        })
     }
 
     render(){
@@ -40,7 +37,7 @@ class NewUser extends Component{
         return(
             <div className="content">
                 {this.state.warn?<h4 style={{color: 'red'}}>You must include at least a name.</h4>:null}
-                <form className='new-user' onSubmit={e=>this.addUser(e)}>
+                <form className='new-user' onSubmit={e=>this.submit(e)}>
                     <div className="pic-input input-group">
                         {
                             this.state.img
@@ -62,12 +59,68 @@ class NewUser extends Component{
                         <label>Description</label>
                         <textarea name='desc' value={this.state.desc} onChange={e=>this.handleChange(e)} />
                     </div>
-                    <button type='submit'>Create User</button>
+                    {
+                        this.state.id >= 0
+                        ?
+                        <button type='submit'>Update</button>
+                        :
+                        <button type='submit'>Save</button>
+                    }
                 </form>
             </div>
         )
     }
 
+    componentDidMount(){
+        let id = this.props.match.params.id
+        if(id >= 0){
+             axios.get(`/api/user/${id}`).then(response=>{
+                 this.setState({
+                     id: id,
+                     name: response.data.name,
+                     img: response.data.img,
+                     desc: response.data.desc
+                 })
+             })
+        }
+    }
+
+    componentWillReceiveProps(newProps){
+        if (newProps.match.params.hasOwnProperty('id')){
+            let id = newProps.match.params.id    
+            axios.get(`/api/user/${id}`).then(response=>{
+                this.setState({
+                    id: id,
+                    name: response.data.name,
+                    img: response.data.img,
+                    desc: response.data.desc
+                })
+            })
+        } else {
+            this.setState({
+                id: null,
+                name: '',
+                img: '',
+                desc: ''
+            })
+        }
+    }
+
+    submit(e){
+        e.preventDefault();
+        if (this.state.name){
+            if (this.props.match.params.hasOwnProperty('id')){
+                this.updateUser()
+            } else {
+                this.addUser()
+            }
+        } else {
+            this.setState({warn: true})
+            setTimeout(()=> {
+                this.setState({warn: false})
+            }, 2000);
+        }
+    }
     handleChange(e){
         let { value, name } = e.target
         this.setState(_=>{

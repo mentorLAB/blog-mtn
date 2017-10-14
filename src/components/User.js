@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import BlogTile from './subcomponents/BlogTile';
 
 // import axios
@@ -45,6 +46,9 @@ class User extends Component{
                         <span>
                             <h1>{user.name}</h1>
                             <p>{user.desc}</p>
+                            <Link to={`/user/${user.id}/edit`}>
+                                <button className="edit-user">Edit User</button>
+                            </Link>
                         </span>
                 </div>
                 <div className="post-list">

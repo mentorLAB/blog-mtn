@@ -27,7 +27,7 @@
       "image": "http://media2.giphy.com/media/nVXzt7FSJlX7W/giphy.gif",
       "title": "What to do if you think your mentor is an alien",
       "subTitle": "It's probably Alan",
-      "text": "If you think that your alien is a mentor, there are several steps to take. \n\n. Report your suspicions to Jeremy, and provide tinfoil hats for th eboth of you so the alien won't figure it out. \n\n. Ask them if they ate a strange food for breakfast. Aliens, attempting to blend in, will probably say yes. \n\n\n. Create a website that requires them to login and give them the username \"Alien\", and see if they react. If they react then they are an Alien. If they scream at the mention of 'React', then they are probably just an Angular-biased person. \n\n\n\n. Pepper them with questions about their life growing up on Earth. If they get nervous, report them to NASA immediately.",
+      "text": "If you think that your alien is a mentor, there are several steps to take. \n\n. Report your suspicions to Jeremy, and provide tinfoil hats for the both of you so the alien won't figure it out. \n\n. Ask them if they ate a strange food for breakfast. Aliens, attempting to blend in, will probably say yes. \n\n\n. Create a website that requires them to login and give them the username \"Alien\", and see if they react. If they react then they are an Alien. If they scream at the mention of 'React', then they are probably just an Angular-biased person. \n\n\n\n. Pepper them with questions about their life growing up on Earth. If they get nervous, report them to NASA immediately.",
       "featured": true
     },
     {
@@ -37,7 +37,7 @@
       "image": "http://http.cat/418",
       "title": "I'm a little Teapot",
       "subTitle": "The Song we all Know and Love",
-      "text": "I'm a little teapot\nshort and stout\nhere is my handle\nhere is my spout\n\nWhen I get all steamed up\nhear me shout\n'tip me over\nand pour me out'",
+      "text": "I'm a little teapot\nshort and stout\nhere is my handle\nhere is my spout\n\nWhen I get all steamed up\nhear me shout\ntip me over\nand pour me out'",
       "featured": true
     },
     {
@@ -81,14 +81,11 @@
       "featured": false
     },
     {
-      "id": 8,
-      "name": "Thus Saith the Lloyd",
-      "userID": 7,
-      "image": "https://i.pinimg.com/originals/dc/f9/84/dcf984f5698b5143696be337f3bf9e28.jpg (52kB) ",
       "title": "The Importance of Seperating Work and Home Life",
       "subTitle": "The consequences of using your precise logic skills and habits can cause stress in your home life.",
+      "image": "https://lh3.googleusercontent.com/MA6g7OwCck51-LNUZUq8t0N6BcG92ROvpWumv25-IrcooWzk9o4BKT_y9YVai89o1V2eb3xFEYF_Y0ij0FMZw-DS8k6Bd6LwIk8qbT5sMmhhhJJnFITI5B23Fvr_CMyYgVYd7TVN7CMslcgflfX_BXtlBD1rS2YAI5NrdCU2B8RhJka0FJMZqzDTh1TFqBQBIiY4jj9g53X6z3MQ4zDGgDhxg8tuPPduZJBY095lG2BsMBrSkO2rrbFZd4mN1e60MLpNH1_MiWYfDOJPB9FugGnmTo9QRwMlD6-dKCkTDFldgImu32zN6AXieY_ziFsbE8-C4LHR0swxR-3B1y5EMyPRlmf4cgmTicVH9OwFEnOHWpmHNT5tLElBoZvSV1R5qG9k4sd4MhO8kwYT9tanGAlntzueUtZNf4hCzNN1_3h1gHWCqcduhrdkGNcUMwIBD7V2q9Mz_9BDoWfC4BdO0CA_wwMMaKYFuU6OugPSLef4YtHoKmu49rC3QJ0k_xm8l-KOt__X7IX6cNnHjh54oTcpAm13MFdxoxE5qv61TQmKIS90K58hbnpd_CWsXhNJQ5CERMRUObwgCEXXJklslH9mEE2SWCv7DAGm0QFcofA=s672-no",
       "text": "Your skills in logic and precision are highly sought after.\nYou are paid well for those skills, but they have their time and place. That place is not at home.\n\nNow, I'm not saying that you should be illogical or imprecise at home. I am only suggesting that for your own happiness and the happiness of your home you need to allow for more ambiguity and assumptions in your conversations with your significant other, roommates, and children.\n\nWhen someone asks you a question using AND or OR, you may need to format your answer in a way that they can parse.\n\"Would you like to go to Wendy's or Taco Bell for lunch?\" Now, we both know that the answer of \"yes\" means that one of those options is acceptable, but they may not know what you mean. I recommend you say \"either\" before the choices, or the one you prefer.\n\nWhen someone asks you to do several things don't assume that the conditionals are always linked to the entire list.\n\nThe term \"while\" is very similar to what you are familiar with in your programming background, however, you never assume that the condition given with the while is permanent.\n\"While you are out ...\" !== while(youAreOut = true) {//actions here}\n\n\"While you are out ...\" === while(youAreOut === true) {//actions here}\n\nRemember, you are multilingual now and you are going to have a \"fun\" time learning the quirks and syntax of this language and the accompaning APIs (Another-Person Interface).\n\nP.S. Bonus suggestion: take up a hobby not related to programming. It will help you interface with others!",
-      "featured": true
+      "id": 8
     },
     {
       "id": 9,
@@ -133,7 +130,7 @@
       "id": 13,
       "name": "Emily Keator",
       "userID": 2,
-      "image": "https://www.linkedin.com/in/andi-platter-807865149/detail/photo/",
+      "image": "https://media.giphy.com/media/12bVDtXPOzYwda/giphy.gif",
       "title": "How to Smash a Computer",
       "subTitle": "It's only $1000",
       "text": "Step 1: Place computer on a solid surface. \nStep 2: Obtain sledgehammer. \nStep 3: Raise hammer above head, 45 degree angle. \nStep 4: ARE YOU CRAZY DON'T SMASH YOUR COMPUTER THAT THING IS EXPENSIVE AND YOU WILL FIND THE ERROR! \nStep 5: Yoga.",
@@ -217,6 +214,13 @@
       "subTitle": "A short embarrassing story",
       "text": "HA okay, so this is a story all about how I embarrassed myself at camp bow wow. Wish I could make that song last for this whole story but no. So I worked at a doggie daycare called camp bow wow a few years ago. There was a guy who worked there as well and he was attractive. \n\n We usually traded shifts so when I came in he was finishing his shift. I had just done my laundry and I pulled my pants out of the dryer and put them on and went to work. When I got there cute boy was about to leave and we chatted for a bit before he did. I went to the back to help out and I touched the back of my leg.\n\n\n. \"OH MY GOSH WHAT IS IN MY PANTS?! I just talked to cute boy for like 10 minutes with a lump on my leg!\" I was so embarrassed and a little concerned. I've never had a tennis ball sized lump on my leg before. Worried I ran to the bathroom and found what was causing this lump... it was a freaking sock. \n\n\n\n How did I not notice there was a balled up sock in my pants? Still not sure, still embarrassed. The End",
       "featured": true
+    },
+    {
+      "title": "Testing",
+      "subTitle": "provo",
+      "image": "https://unsplash.it/700/400",
+      "text": "dasj;lfksjfl;aksdjflaskj",
+      "id": 22
     }
   ],
   "users": [
@@ -240,25 +244,33 @@
     },
     {
       "id": 3,
-      "name": "Jeffrey"
+      "name": "Jeffrey",
+      "img": "",
+      "desc": ""
     },
     {
       "id": 4,
-      "name": "Chris Anderson"
+      "name": "Chris Anderson",
+      "img": "",
+      "desc": ""
     },
     {
       "id": 5,
-      "name": "Janise Suski"
+      "name": "Janise Suski",
+      "img": "",
+      "desc": ""
     },
     {
       "id": 6,
-      "name": "R. J. Stewart"
+      "name": "R. J. Stewart",
+      "img": "",
+      "desc": ""
     },
     {
-      "id": 7,
       "name": "Thus Saith the Lloyd",
       "img": "https://scontent.fmkc1-1.fna.fbcdn.net/v/t1.0-9/12193590_10154290494784119_4013117012609151879_n.jpg?oh=b1190eb6fa8306c29512290bd2c6180d&oe=5A810FE2",
-      "desc": "Mentor Extraordinaire!"
+      "desc": "Mentor Extraordinaire! Modern Renascence Man. Adrenaline Aficionado.",
+      "id": 7
     },
     {
       "id": 8,
@@ -268,7 +280,9 @@
     },
     {
       "id": 9,
-      "name": "David Fischer"
+      "name": "David Fischer",
+      "img": "",
+      "desc": ""
     },
     {
       "id": 10,
@@ -279,7 +293,8 @@
     {
       "id": 11,
       "name": "Sperry the Dog",
-      "desc": "Woof"
+      "desc": "Woof",
+      "img": ""
     },
     {
       "id": 12,
