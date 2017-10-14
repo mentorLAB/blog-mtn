@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 //import axios
-import axios from 'axios';
 
 class NewUser extends Component{
     constructor(){
@@ -13,27 +12,16 @@ class NewUser extends Component{
         }
     }
     
-    // Insert addUser method here:
-    addUser(){
-        axios.post('/api/users', this.state).then(response=>{
-            console.log(response)
-            let user = response.data
-            this.props.history.push(`/user/${user.id}`)
-        })
-    }
+    // insert addUser
 
-    // Insert updateUser method here:    
-    updateUser(){
-        let id = this.props.match.params.id        
-        axios.put(`/api/user/${id}`, this.state).then(response=>{
-            console.log(response)
-            let user = response.data
-            this.props.history.push(`/user/${user.id}`)
-        })
-    }
+
+    // insert updateUser    
+
+
+    // insert deleteUser
+
 
     render(){
-        console.log(this.state);
         return(
             <div className="content">
                 {this.state.warn?<h4 style={{color: 'red'}}>You must include at least a name.</h4>:null}
@@ -62,7 +50,10 @@ class NewUser extends Component{
                     {
                         this.state.id >= 0
                         ?
-                        <button type='submit'>Update</button>
+                        <span>
+                            <button className='delete-button'>Delete User</button>
+                            <button type='submit'>Update</button>
+                        </span>
                         :
                         <button type='submit'>Save</button>
                     }

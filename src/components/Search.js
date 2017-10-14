@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import BlogTile from './subcomponents/BlogTile';
 import UserTile from './subcomponents/UserTile';
 
+// import axios
 
 class Search extends Component{
     constructor(){
@@ -18,33 +18,10 @@ class Search extends Component{
     
     
     // Insert a search method to make an axios request to setState -> display.
-    search(e){
-        e.preventDefault()
-        const { searchTerm, searchType }=this.state
-        
-        axios.get(`/api/${searchType}?q=${searchTerm}`).then(response=>{
-            if(searchType==='blogs'){
-                this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))
-                this.setState({
-                    blogResults: response.data,
-                    userResults: []
-                })
-            }else{
-                this.props.history.push(makeQuery('/search?',{q:searchTerm,type:searchType}))
-                this.setState({
-                    blogResults: [],
-                    userResults: response.data
-                })
-            }
-        })
-    }
     
     
     render(){
         // map over the searchResults here
-        const blogResults = this.state.blogResults.map((c,i)=> <BlogTile key={i} blog={c}/> )
-        const userResults = this.state.userResults.map((c,i)=> <UserTile key={i} user={c}/>)
-
         return(
             <div className='content search-view' >
                 <form className='search-group' onSubmit={e=>this.search(e)} >
@@ -58,7 +35,6 @@ class Search extends Component{
                     <button type="submit">Search</button>
                 </form>
                 <div className="blog-list">
-                    {/* insert your mapped data from blogs and users here */}
                     {blogResults}
                     {userResults}
 
