@@ -32,6 +32,11 @@ To use axios you will import it into any component or Javascript file in which y
 
 `import axios from 'axios';`
 
+## NPM Start
+
+After all the packages have installed, start up the project by running `npm start`
+
+
 #### Methods
 For each type of HTTP request you will use the appropriate axios method:
 
