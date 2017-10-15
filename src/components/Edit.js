@@ -4,6 +4,7 @@ import ConfirmModal from './subcomponents/ConfirmModal';
 
 // import axios
 
+
 class Edit extends Component {
     constructor(){
         super();
@@ -17,15 +18,15 @@ class Edit extends Component {
         this.yes = this.yes.bind(this);
         this.no = this.no.bind(this);
     }
+
     // insert componentWillMount
-    
 
     
     // insert updatePost 
     
 
-    // Insert into the deleteBlog method an axios delete request 
-    
+    // Insert into the deletePost 
+
     
     render() {
         let {title, subTitle, image, text} = this.state;

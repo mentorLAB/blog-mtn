@@ -143,6 +143,7 @@ Open the Home.js file in the components folder.
 Import axios near the top of the file:
 `import axios from 'axios';`
 
+
 Now, you will make a `componentWillMount` method and use axios to make a GET request to the endpoint: `'/api/featured'`
 
 Using the `.then` function on the axios call, set the `featured` property in state to the appropriate data in the results.
@@ -499,6 +500,7 @@ this.props.history.push(`/search/`)
 
 </details>
 </details>
+
 
 ## Black Diamond
 

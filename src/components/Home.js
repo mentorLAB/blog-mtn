@@ -13,7 +13,7 @@ class Home extends Component{
         }
     }
 
-    // Make a componentWillMount method here:
+    // insert componentWillMount:
     
 
     render(){

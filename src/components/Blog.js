@@ -13,6 +13,7 @@ class Blog extends Component{
     }
 
     // insert componentWillMount method
+
     
     render(){
         const blog = this.state.blog;

@@ -4,7 +4,6 @@ import BlogTile from './subcomponents/BlogTile';
 import UserTile from './subcomponents/UserTile';
 
 // import axios
-import axios from 'axios'
 
 class Search extends Component{
     constructor(){
@@ -18,7 +17,7 @@ class Search extends Component{
     }
     
     
-    // Insert a search method to make an axios request
+    // insert search method
     
     
     render(){
