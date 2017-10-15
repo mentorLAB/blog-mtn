@@ -6,31 +6,12 @@
     "configurations": [
         
         {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/server/main.js"
-        },
-        {
             "type": "chrome",
             "request": "attach",
             "name": "Chrome",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceRoot}",
-            "port": 3000
-        },
-        {
-            "type": "node",
-            "request": "attach",
-            "name": "Node",
-            "protocol": "inspector",
-            "port": 3001
-        }
-    ],
-    "compounds": [
-        {
-            "name": "Hybrid",
-            "configurations": ["Node", "Chrome"]
+            "url": "http://localhost:3000/#/",
+            "port": 9222,
+            "webRoot": "${workspaceRoot}"
         }
     ]
 }
