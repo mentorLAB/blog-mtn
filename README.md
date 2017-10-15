@@ -385,6 +385,7 @@ this.props.history.push('/search')
 <summary><code>src/components/Edit.js</code></summary>
 
 ```javascript
+...
     componentWillMount(){
         axios.get(`/api/blog/${this.props.match.params.id}`).then(results=>{
             let blog = results.data
@@ -412,6 +413,7 @@ this.props.history.push('/search')
             this.props.history.push('/search')
         }).catch(console.log)
     }
+...
 ```
 
 </details>
@@ -439,7 +441,7 @@ this.props.history.push(`/search/`)
 ```
 
 <details>
-<summary><b>Code Summary</b><summary>
+<summary><b>Code Summary</b></summary>
 <details>
 <summary><b>src/components/NewUser.js</b></summary>
 
@@ -476,7 +478,7 @@ this.props.history.push(`/search/`)
 
 </details>
 <details>
-<summary><b>src/components/User</b></summary>
+<summary><b>src/components/User.js</b></summary>
 
 ```javascript
 ...
